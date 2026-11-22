@@ -1,0 +1,13 @@
+id = "simple_music_control"
+name = "simple_music_control"
+version = "1.0.0"
+description = "simple-music-control (Horizon Rust port): 1:1 port of pajic's simple-music-control (MIT, https://github.com/pajicadvance/simple-music-control, port by sparticle). Music control from the mod core: the config model, the situational music picker (biome/dimension/light conditions), the jukebox tracker, the keybind model (music off/next/previous), the music-note color tick, and the sound-engine pause control.\n\nHonest status: nothing of this is visible in game yet. The client mod API has no input/keybind hook, no sound-engine or music-player surface and no client tick hook, so no music is controlled in game: the input, sound and tick hooks of the original have nothing to register on. The logic runs its tests; the seams stay recorded in the source README and get wired the day those surfaces land.\n\nThe package ships the full modular source (src/runtime.rs + the mod API entry) with a Cargo.lock, matching source revision on main.\n\nPinned to Horizon f00125f and horizon-mixins e59da909; exact 1:1 Rust port tested against those revisions.\n\nLicence: MIT. Source: https://github.com/Sparticle62ops/horizon-simple-music-control\n"
+authors = ["pajic", "sparticle"]
+api = "0.2"
+side = "both"
+capabilities = ["registries"]
+
+[native]
+game = "26.3"
+horizon = "f00125f61f794aaa3d4e950d301f353b35b6ee3d"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"

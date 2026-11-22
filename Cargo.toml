@@ -5,9 +5,8 @@ edition = "2024"
 license = "MIT"
 description = "Simple Music Control ported to Horizon (slice 1: config, situational music picker, jukebox tracker, keybinds, music-note color tick, sound-engine pause control). Upstream: github.com/pajicadvance/simple-music-control, MIT (c) 2026 pajic."
 
-[lib]
-path = "runtime.rs"
 
 [dependencies]
+horizon-mod-api = { path = ".horizon/sdk/api/crates/horizon-mod-api" }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
